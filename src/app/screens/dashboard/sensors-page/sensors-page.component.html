@@ -1,0 +1,67 @@
+<div fxLayout="column" class="card" fxLayoutGap="3%">
+    <div>
+        <app-sensor-card></app-sensor-card>
+    </div>
+    
+    <div>
+        <mat-card>
+            <div fxLayout="column">
+                <div>
+                    <span class="text">List Of Sensors</span>
+                </div>
+                <div fxLayout="column">
+                    <table mat-table [dataSource]="dataSource" fxFlex="100%">
+                        <ng-container matColumnDef="sl">
+                            <th mat-header-cell *matHeaderCellDef>Sl No</th>
+                            <td mat-cell *matCellDef="let element; let i= index"> {{i+1}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="customer">
+                            <th mat-header-cell *matHeaderCellDef>Customer</th>
+                            <td mat-cell *matCellDef="let element; let i= index"> {{element.customer}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="location">
+                            <th mat-header-cell *matHeaderCellDef>Location</th>
+                            <td mat-cell *matCellDef="let element; let i= index"> {{element.location}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="sensorid">
+                            <th mat-header-cell *matHeaderCellDef>sensorid</th>
+                            <td mat-cell *matCellDef="let element; let i= index"> {{element.thermalsensor}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="lastresponse">
+                            <th mat-header-cell *matHeaderCellDef>Last Responded</th>
+                            <td mat-cell *matCellDef="let element; let i= index"> {{element.Last_Responded | date:'MMM d, y, hh:mm:ss a'}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="totalimages">
+                            <th mat-header-cell *matHeaderCellDef>Total Images</th>
+                            <td mat-cell *matCellDef="let element; let i= index">{{element.Total_Images}}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="correctresult">
+                            <th mat-header-cell *matHeaderCellDef>Correct Result</th>
+                            <td mat-cell *matCellDef="let element; let i= index">{{element.correctCount}}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="wrongresult">
+                            <th mat-header-cell *matHeaderCellDef>Wrong Result</th>
+                            <td mat-cell *matCellDef="let element; let i= index">{{element.wrongCount}}</td>
+                        </ng-container>
+                        <ng-container matColumnDef="view">
+                            <th mat-header-cell *matHeaderCellDef> </th>
+                            <td mat-cell *matCellDef="let element"> 
+                                <button mat-raised-button color="primary" (click)="view(element.thermalsensor)">View</button> 
+                            </td>
+                        </ng-container>
+    
+    
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            
+                    </table>
+                    <mat-paginator [pageSizeOptions]="[5, 10]"
+                        showFirstLastButtons 
+                        aria-label="Select page of periodic elements">
+                    </mat-paginator> 
+                </div>
+            </div>
+        </mat-card>
+    </div>
+    <br>
+</div>

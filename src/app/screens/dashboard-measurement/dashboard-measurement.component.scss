@@ -1,0 +1,125 @@
+.logo{
+    width: 100%; 
+    height: 80px;
+}
+
+
+mat-sidenav{
+    width: 20%;
+}
+
+.buttondiv{
+    height: 80px;  
+    margin-top: 2%;
+}
+
+.but{
+    width: 100%; 
+    height: 100%;
+    border-radius: 0%;
+    background-color: rgb(207, 228, 255);
+    // position: absolute;
+    // border-left: 5px solid transparent;
+}
+
+.but:hover{
+    border-right: 5px solid green;
+}
+
+.assets{
+    width: 33%;
+}
+
+.dashboardtext{
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-weight: 600;
+    font-size: 16px;
+}
+
+.logoimg{
+    width: 60%;
+}
+
+
+.content{
+    width: 50%;
+    margin-top: 6%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+// .content{
+//     // margin-top: 2%;
+//     height: 100%;
+//     // margin-left: 2%;
+//     // margin-right: 2%;
+// }
+
+.assets{
+    width: 50%;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // overflow: hidden;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.imagediv{
+    // border: 2px;
+    // border-color: rgb(161, 176, 177);
+    // border-style: solid;
+    background-color: aliceblue;
+    height: 12vw;
+    width: 20vw;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+// .imagecard{
+//     width: 20vw;
+//     height: 20vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: hidden;
+//     object-fit: cover;
+// }
+
+
+.card{
+    width: 100%;
+    // height: 100vh;
+}
+
+.text{
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+}
+  
+th.mat-header-cell, td.mat-cell {
+    text-align: center !important;
+}
+

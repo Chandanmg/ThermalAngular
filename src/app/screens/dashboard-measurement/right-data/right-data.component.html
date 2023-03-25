@@ -1,0 +1,75 @@
+<div fxLayout="column" class="content">
+    <div fxLayout="row" fxLayoutGap="2%">
+        <div class="assets">
+            <mat-card style="background-color: rgb(0, 52, 76);">
+                <div fxLayout="column" >
+                    <div fxLayout="row">
+                        <div fxLayoutAlign="start center" style="width: 50%;">
+                            <span style="font-size: 1.5vw; color: white; font-weight: 500;" >Sl No</span>
+                        </div>
+                        <div fxLayoutAlign="center center" style="width: 50%;">
+                            <span style="font-size: 2.5vw; color: white; font-weight: 500;" >4</span>
+                        </div>
+                    </div>
+                    <div fxLayout="row">
+                        <div fxLayoutAlign="start center" style="width: 50%;">
+                            <span style="font-size: 1.5vw; color: white; font-weight: 500;" >Time</span>
+                        </div>
+                        <div fxLayoutAlign="center center" style="width: 50%;">
+                            <span style="font-size: 2.5vw; color: white; font-weight: 500;" ></span>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="assets">
+            <mat-card style="background-color: rgb(0, 52, 76);">
+                <div fxLayout="row" fxLayoutGap="3%">
+                    <div fxLayoutAlign="start center" style="width: 50%;">
+                        <span style="font-size: 1.5vw; color: white; font-weight: 500;" >Number of People Detected</span>
+                    </div>
+                    <div fxLayoutAlign="center center" style="width: 50%;">
+                        <span style="font-size: 5vw; color: white; font-weight: 500;" ></span>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+
+
+    <!-- Images -->
+    <div fxLayout="row">
+        <div fxLayoutAlign="end center" style="margin-top: 8%; width: 15%;">
+            <button mat-raised-button style="background-color: rgb(69, 157, 176); color: white;">
+                <mat-icon>skip_previous</mat-icon>
+            </button>
+        </div>
+        <div fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="5%" style="margin-top: 8%; width: 70%;">
+            <div fxLayoutAlign="center center">
+                <img src="../../../../assets/images/thermal image 3.jpg">
+            </div>
+            <div fxLayoutAlign="center center">
+                <img src="../../../../assets/images/group image.jpg">
+            </div>
+        </div>
+        <div fxLayoutAlign="start center" style="margin-top: 8%; width: 15%;">
+            <button mat-raised-button style="background-color: rgb(69, 157, 176); color: white;">
+                <mat-icon>skip_next</mat-icon>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Buttons -->
+    <div fxLayout="row" fxFlex="100%" style="margin-top: 8%;" fxLayoutAlign="end center">
+        <div fxLayoutAlign="center center" style="width: 33%;">
+            <button style="width: 70%; height: 6vh; background-color: rgb(97, 157, 87); color: white;" mat-raised-button (click)="correct()">Correct</button>
+        </div>
+        <div fxLayoutAlign="center center" style="width: 33%;">
+            <button style="width: 70%; height: 6vh; background-color: rgb(176, 69, 69); color: white;" mat-raised-button (click)="wrong()">Wrong</button>
+        </div>
+        <div fxLayoutAlign="center center" style="width: 33%;">
+            <button style="width: 70%; height: 6vh; background-color: rgb(69, 157, 176); color: white;" mat-raised-button (click)="back()">Back</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div mat-dailog-content >
+    <form (submit)="addCustomer(new)" #new="ngForm">
+        <div fxLayout="row">
+            <div class="middle1" fxLayoutAlign="start center">
+                <span class="gap" style="font-size: 20px;">Customer</span>
+            </div>
+            <div class="middle2" fxLayoutAlign="strat center">
+                <mat-form-field appearance="outline">
+                    <input width="100%" matInput  name="customer" ngModel #customer="ngModel" type="text" placeholder="Enter Customer" required>
+                    <mat-error *ngIf="customer.invalid">Enter Customer</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div fxLayout="row">
+            <div class="middle1" fxLayoutAlign="start center">
+                <span class="gap" style="font-size: 20px;">Location</span>
+            </div>
+            <div class="middle2" fxLayoutAlign="start center">
+                <mat-form-field appearance="outline">
+                    <input width="100%" matInput name="location" ngModel #location="ngModel" type="text" placeholder="Enter Location" required>
+                    <mat-error *ngIf="location.invalid">Enter Location</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div fxLayout="row">
+            <div class="middle1" fxLayoutAlign="start center">
+                <span class="gap" style="font-size: 20px;">Thermal Sensor</span>
+            </div>
+            <div class="middle2" fxLayoutAlign="start center">
+                <mat-form-field appearance="outline">
+                    <input width="100%" matInput name="thermal_sensors" ngModel #thermalsensor="ngModel" type="text" placeholder="Enter Thermal Sensor" required>
+                    <mat-error *ngIf="thermalsensor.invalid">Enter Thermal Sensor</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div fxLayout="row">
+            <div fxLayoutAlign="end center" style="margin-left: 80%;">
+                <button mat-raised-button style="background-color: rgb(69, 157, 176);" type="submit">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

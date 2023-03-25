@@ -1,0 +1,74 @@
+<div fxLayout="column" class="content">
+    <div fxLayout="row" fxLayoutGap="2%">
+        <div class="assets">
+            <mat-card style="background-color: rgb(0, 52, 76);">
+                <div fxLayout="column" fxLayoutGap="5%">
+                    <div fxLayoutAlign="center center">
+                        <span style="font-size: 22px; color: white; font-weight: 500;" >Total Sensors</span>
+                    </div>
+                    <div fxLayout="row" style="width: 100%;" fxLayoutGap="6%" fxLayoutAlign="center center">
+                        <div fxLayout="column">
+                            <div class="circle">
+                                <div fxLayoutAlign="center center" class="circle-text">{{totalsensors}}</div>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <div style="color: rgb(102, 177, 244);">Total</div>
+                            </div>
+                        </div>
+                        <div fxLayout="column">
+                            <div class="circle">
+                                <div fxLayoutAlign="center center" class="circle-text">{{online}}</div>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <div style="color: rgb(102, 177, 244);">Online</div>
+                            </div>
+                        </div>
+                        <div fxLayout="column">
+                            <div class="circle">
+                                <div fxLayoutAlign="center center" class="circle-text">{{offline}}</div>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <div style="color: rgb(102, 177, 244);">Offline</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="assets">
+            <mat-card style="background-color: rgb(0, 52, 76);">
+                <div fxLayout="column" fxLayoutGap="5%">
+                    <div fxLayoutAlign="center center">
+                        <span style="font-size: 22px; color: white; font-weight: 500;" >Measurements</span>
+                    </div>
+                    <div fxLayout="row" style="width: 100%;" fxLayoutGap="6%" fxLayoutAlign="center center">
+                        <div fxLayout="column">
+                            <div class="circle">
+                                <div fxLayoutAlign="center center" class="circle-text">{{totalmeasurements}}</div>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <div style="color: rgb(102, 177, 244);">Total</div>
+                            </div>
+                        </div>
+                        <div fxLayout="column">
+                            <div class="circle">
+                                <div fxLayoutAlign="center center" class="circle-text">{{correctcount}}</div>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <div style="color: rgb(102, 177, 244);">Correct</div>
+                            </div>
+                        </div>
+                        <div fxLayout="column">
+                            <div class="circle">
+                                <div fxLayoutAlign="center center" class="circle-text">{{wrongcount}}</div>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <div style="color: rgb(102, 177, 244);">Wrong</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>
